@@ -1,9 +1,9 @@
 # Description: #
-This project receives a string as an argument and outputs the string in a graphic representation using ASCII. And prints the output via three banners: standard, shadow and thinkertoy. Also, the user can choose the color of the output.
+This project receives a string as an argument and outputs the string in a graphic representation using ASCII. And prints the output via three banners: standard, shadow and thinkertoy. Also, the user can choose the color of the output.Ascii-art-stylize consists on making site:
 
-# Authors: #
-@adletb
-@meruyert.ts
+* more appealing, interactive and intuitive.
+* more user friendly.
+* give more feedback to the user.
 
 # Usage: # 
 -Run the program by typing go run . in the terminal
