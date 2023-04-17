@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="templates/style.css">
+    <title>MY STYLIZE</title>
+</head>
+<body>
+        <header >
+            <div>
+                <h1><a href="/">ASCII ART WEB STYLIZE</a></h1>
+            </div>
+        </header>
+            <section>
+                <div class="user-choice" >
+                    <form action="/ascii-art" method="POST" >
+                            <div>
+                                <textarea id="InputText" name="string" rows="5" cols="50" placeholder="Write your string here"></textarea>
+                            </div>
+                            <div id="FontSelection">
+                                <div class="split">
+                                    <div>
+                                        <p>Please select your font:</p>
+                                        <input type="radio" id="fontStandard" name="font" class="BannerChoice" value="standard" checked="checked">
+                                        <label for="fontStandard" >Standard</label><br>
+                                        <input type="radio" id="fontShadow" name="font" class="BannerChoice" value="shadow">
+                                        <label for="fontShadow">Shadow</label><br>  
+                                        <input type="radio" id="fontThinkertoy" name="font" class="BannerChoice" value="thinkertoy">
+                                        <label for="fontThinkertoy">Thinkertoy</label><br><br>
+                                    </div>
+                                    <div>
+                                        <p>Please select your color:</p>
+                                        <select name="color">
+                                        <option disabled>Choose the color</option>
+                                        <option value="white">White</option>
+                                        <option value="red">Red</option>
+                                        <option value="pink">Pink</option>
+                                        <option value="blue">Blue</option>
+                                        <option value="black">Black</option>
+                                        </select>
+                                  
+                                    </div>
+                                    
+                                </div>
+                                <button>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Submit
+                                </button>
+                            </div>
+                       
+                   
+                     </form>
+                </div>
+            </section>
+            <section >
+                <div class="user-choice">
+                    <div id="AsciiBox">
+                        <pre style="color:{{.AsciiColor}}">{{.AsciiPrint}}</pre>
+                    </div>
+                </div>
+            </section>
+   
+   
+</body>
+</html>
